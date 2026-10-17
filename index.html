@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Consulta de Coordenadas</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1{
+    text-align:center;
+    color:#0078d4;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+    box-sizing:border-box;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#0078d4;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#005a9e;
+}
+
+#resultado{
+    margin-top:20px;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.botao-mapa{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 15px;
+    background:green;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Consulta de Coordenadas</h1>
+
+<input
+    type="text"
+    id="codigo"
+    placeholder="Digite o código">
+
+<button onclick="buscarRegistro()">
+    Pesquisar
+</button>
+
+<div id="resultado"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
